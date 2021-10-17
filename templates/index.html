@@ -22,7 +22,6 @@
       <!-- fevicon -->
       <link rel="icon" href="" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
-      {{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}
       <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
       <!-- awesome fontfamily -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,9 +33,7 @@
    <!-- body -->
    <body class="main-layout">
       <!-- loader  -->
-      <div class="loader_bg">
-         <div class="loader"><img src="{{ url_for('static', filename='images/loading.gif') }}" alt="" /></div>
-      </div>
+      
       <!-- end loader -->
    
    <div class="wrapper">
@@ -517,25 +514,8 @@
         });
       </script>
     
-      <script>
-      // This example adds a marker to indicate the position of Bondi Beach in Sydney,
-      // Australia.
-      function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 11,
-          center: {lat: 40.645037, lng: -73.880224},
-          });
-
-        var image = 'images/location_point.png';
-          var beachMarker = new google.maps.Marker({
-             position: {lat: 40.645037, lng: -73.880224},
-             map: map,
-             icon: image
-          });
-        }
-        </script>
+      
         <!-- google map js -->
-          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
         <!-- end google map js -->
 
    </body>
