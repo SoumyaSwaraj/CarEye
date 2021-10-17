@@ -84,16 +84,16 @@
                <div class="col-lg-3 logo_section">
                   <div class="full">
                      <div class="center-desk">
-                        <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="#"></a> </div>
+                        <div class="logo"> <a href="index.html"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="#"></a> </div>
                      </div>
                   </div>
                </div>
                <div class="col-lg-9">
                   <div class="right_header_info">
                      <ul>
-                        <li><img style="margin-right: 15px;" src="images/phone_icon.png" alt="#" /><a href="#">987-654-3210</a></li>
-                        <li><img style="margin-right: 15px;" src="images/mail_icon.png" alt="#" /><a href="#">demo@gmail.com</a></li>
-                        <li><img src="images/search_icon.png" alt="#" /></li>
+                        <li><img style="margin-right: 15px;" src="{{ url_for('static', filename='images/pnone_icon.png') }}" alt="#" /><a href="#">987-654-3210</a></li>
+                        <li><img style="margin-right: 15px;" src="{{ url_for('static', filename='images/mail_icon.png') }}" alt="#" /><a href="#">demo@gmail.com</a></li>
+                        <li><img src="{{ url_for('static', filename='images/search_icon.png') }}" alt="#" /></li>
                          <li>
                            <button type="button" id="sidebarCollapse">
                               <img src="images/menu_icon.png" alt="#" />
@@ -359,35 +359,35 @@
             <input id="first" name="Year" type="number ">
           </div></div>
           <div class="col-md-12"><div class="full field">
-            <h3>What is the Showroom Price?(In lakhs)</h3><br><input id="second" name="Present_Price" required="required">
+            <h3  style="color:white">What is the Showroom Price?(In lakhs)</h3><br><input id="second" name="Present_Price" required="required">
              </div></div>
           <div class="col-md-12"><div class="full field">
-            <h3>How Many Kilometers Drived?</h3><input id="third" name="Kms_Driven" required="required">
+            <h3 style="color:white">How Many Kilometers Drived?</h3><input id="third" name="Kms_Driven" required="required">
              </div></div>
           <div class="col-md-12"><div class="full field">
-            <h3>How much owners previously had the car(0 or 1 or 3) ?</h3><br><input id="fourth" name="Owner" required="required">
+            <h3 style="color:white">How much owners previously had the car(0 or 1 or 3) ?</h3><br><input id="fourth" name="Owner" required="required">
              </div></div>
           <div class="col-md-12"><div class="full field">
-            <h3>What Is the Fuel type?</h3><br><select name="Fuel_Type_Petrol" id="fuel" required="required">
+            <h3 style="color:white">What Is the Fuel type?</h3><br><select name="Fuel_Type_Petrol" id="fuel" required="required">
                 <option value="Petrol">Petrol</option>
                 <option value="Diesel">Diesel</option>
                 <option value="Diesel">CNG</option>
             </select>
              </div></div>
           <div class="col-md-12"><div class="full field">
-            <h3>Are you A Dealer or Individual</h3><br><select name="Seller_Type_Individual" id="resea" required="required">
+            <h3 style="color:white">Are you A Dealer or Individual</h3><br><select name="Seller_Type_Individual" id="resea" required="required">
                 <option value="Dealer">Dealer</option>
                 <option value="Individual">Individual</option>
             </select>
              </div></div>
           <div class="col-md-12"><div class="full field">
-            <h3>Transmission type</h3><br><select name="Transmission_Mannual" id="research" required="required">
+            <h3 style="color:white">Transmission type</h3><br><select name="Transmission_Mannual" id="research" required="required">
                 <option value="Mannual">Manual Car</option>
                 <option value="Automatic">Automatic Car</option>
             </select>
              </div></div>
           <div class="col-md-12"><div class="full field">
-            <br><br><button id="sub" type="submit ">Calculate the Selling Price</button>
+            <br><br><button id="sub" type="submit " class="btn btn-primary">Calculate the Selling Price</button>
             <br>
 
 
